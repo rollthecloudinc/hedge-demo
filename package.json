@@ -2,7 +2,7 @@
   "name": "hedge-demo",
   "main": "webpack.config.js",
   "dependencies": {
-    "@rollthecloudinc/hedge": "0.0.1"
+    "@rollthecloudinc/hedge": "0.0.10"
   },
   "scripts": {
     "watch": "webpack --watch",

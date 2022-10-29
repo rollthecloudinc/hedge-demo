@@ -16,4 +16,11 @@ async function demoIt() {
   console.log('service document', serviceDocument);
   console.log('region document', regionDocument);
 
+  const res = await h.bounce('/adlistitems/', {});
+
+  console.log('bounced response from ' + regionDocument.region, res);
+
+  const { difference } = await region.compare({ region: 'useast' });
+  console.log(`region ${regionDocument.region} grid carbon intensity difference to useast`, difference);
+
 }

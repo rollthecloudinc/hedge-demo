@@ -16,6 +16,7 @@ async function demoIt() {
   console.log('service document', serviceDocument);
   console.log('region document', regionDocument);
 
+  // NOTE: bounce has the same api as fetch except no protocol or domain is needed.
   const res = await h.bounce('/adlistitems/', {});
 
   console.log('bounced response from ' + regionDocument.region, res);
